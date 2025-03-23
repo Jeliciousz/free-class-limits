@@ -66,15 +66,15 @@ public MRESReturn DHook_GetClassLimit(DHookReturn hReturn, DHookParam hParams)
 
 	switch (class)
 	{
-		case TFClass_Scout: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitScout));
-		case TFClass_Soldier: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitSoldier));
-		case TFClass_Pyro: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitPyro));
-		case TFClass_DemoMan: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitDemoman));
-		case TFClass_Heavy: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitHeavy));
-		case TFClass_Engineer: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitEngineer));
-		case TFClass_Medic: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitMedic));
-		case TFClass_Sniper: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitSniper));
-		case TFClass_Spy: DHookSetReturn(hReturn, GetConVarBool(g_cvClasslimitSpy));
+		case TFClass_Scout: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitScout));
+		case TFClass_Soldier: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitSoldier));
+		case TFClass_Pyro: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitPyro));
+		case TFClass_DemoMan: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitDemoman));
+		case TFClass_Heavy: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitHeavy));
+		case TFClass_Engineer: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitEngineer));
+		case TFClass_Medic: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitMedic));
+		case TFClass_Sniper: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitSniper));
+		case TFClass_Spy: DHookSetReturn(hReturn, GetConVarInt(g_cvClasslimitSpy));
 		default: return MRES_Ignored;
 	}
 
