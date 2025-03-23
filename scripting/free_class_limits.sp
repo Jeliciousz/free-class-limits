@@ -55,7 +55,7 @@ public OnPluginStart()
 	delete hGameData;
 }
 
-public OnClientPutInServer(int client)
+public OnClientConnected(int client)
 {
 	SendConVarValue(client, g_cvMpTournament, "1")
 }
