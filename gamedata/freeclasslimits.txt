@@ -1,0 +1,41 @@
+"Games"
+{
+	"tf"
+	{
+		"Functions"
+		{
+			"CTFGameRules::GetClassLimit"
+			{
+				"signature"	"CTFGameRules::GetClassLimit"
+				"callconv"	"thiscall"
+				"return"	"int"
+				"this"		"ignore"
+				"arguments"
+				{
+					"iClass"
+					{
+						"type"  "int"
+					}
+				}
+			}
+		}
+
+		// Linux users: use objdump and Ctrl+F
+		// Windows users: Refer to https://www.youtube.com/watch?v=ekyLf6hu4qI as an example
+		// Bonus points if you have TF2's source code on you, it will make your life SO much easier
+
+		"Signatures"
+		{
+			// int CTFGameRules::GetClassLimit( int iClass )
+
+			"CTFGameRules::GetClassLimit"
+			{
+				"library"	"server"
+				"linux"		"@_ZN12CTFGameRules13GetClassLimitEi"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x84\xC0\x75\x2A\x83\xBE\x40\x0A\x00\x00\x07"
+			}
+
+			
+		}
+	}
+}
