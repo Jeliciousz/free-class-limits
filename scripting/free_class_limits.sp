@@ -60,6 +60,16 @@ public OnClientConnected(int client)
 	SendConVarValue(client, g_cvMpTournament, "1")
 }
 
+public OnClientPutInServer(int client)
+{
+	SendConVarValue(client, g_cvMpTournament, "1")
+}
+
+public OnClientPostAdminCheck(int client)
+{
+	SendConVarValue(client, g_cvMpTournament, "1")
+}
+
 public MRESReturn DHook_GetClassLimit(DHookReturn hReturn, DHookParam hParams)
 {
 	TFClassType class = view_as<TFClassType>(DHookGetParam(hParams, 1));
