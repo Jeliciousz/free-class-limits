@@ -1,4 +1,4 @@
-# free-class-limits
+# Free Class Limits
 A SourceMod script for TF2 servers that allows setting class limits without tournament mode being enabled.
 
 Uses the vanilla `tf_tournament_classlimit_[classname]` cvars to control class limits. (-1 meaning no limit)
