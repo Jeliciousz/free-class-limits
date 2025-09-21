@@ -40,7 +40,6 @@ public OnPluginStart()
 	g_cvClasslimitSniper = FindConVar("tf_tournament_classlimit_sniper");
 	g_cvClasslimitSpy = FindConVar("tf_tournament_classlimit_spy");
 	
-	
 	GameData hGameData = LoadGameConfigFile(GAMEDATA);
 	if( hGameData == null ) 
 		SetFailState("Failed to load \"%s.txt\" gamedata.", GAMEDATA);
