@@ -2,7 +2,6 @@
 #include <dhooks>
 #include <tf2>
 
-#define VERSION "1"
 #define GAMEDATA "freeclasslimits"
 
 ConVar g_cvMpTournament;
@@ -22,7 +21,7 @@ public Plugin myinfo =
 	name = "Free Class Limits",
 	author = "Jeliciousz, brokenphilip",
 	description = "Allow setting class limits without tournament mode being enabled.",
-	version = VERSION,
+	version = 1.1,
 	url = "https://github.com/Jeliciousz/free-class-limits"
 };
 
