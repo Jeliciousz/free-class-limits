@@ -58,6 +58,10 @@ public OnPluginStart()
 
 public OnClientPutInServer(int client)
 {
+	if (IsFakeClient(client)
+    {
+        return;
+    }
 	SendConVarValue(client, g_cvMpTournament, "1")
 }
 
