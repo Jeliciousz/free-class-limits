@@ -57,7 +57,7 @@ public OnPluginStart()
 
 public OnClientPutInServer(int client)
 {
-	if (IsFakeClient(client)
+	if (IsFakeClient(client))
     {
         return;
     }
