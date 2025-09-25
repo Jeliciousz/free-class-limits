@@ -21,7 +21,7 @@ public Plugin myinfo =
 	name = "Free Class Limits",
 	author = "Jeliciousz, brokenphilip",
 	description = "Allow setting class limits without tournament mode being enabled.",
-	version = "1.1",
+	version = "0.0.2",
 	url = "https://github.com/Jeliciousz/free-class-limits"
 };
 
