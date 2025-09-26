@@ -53,12 +53,12 @@ public OnPluginStart()
 
     delete hGameData;
 
-    HookEvent("teamplay_round_start", Event_RoundStart)
+    HookEvent("teamplay_round_active", Event_RoundActive)
 
     PrintToServer("Free Class Limits loaded!")
 }
 
-public void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
+public void Event_RoundActive(Event event, const char[] name, bool dontBroadcast)
 {
     bool full_reset = event.GetBool("full_reset");
 
